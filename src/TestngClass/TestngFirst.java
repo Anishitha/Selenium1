@@ -28,7 +28,7 @@ public class TestngFirst {
 	
 	@Test
 	public void testcase02(){
-		driver.findElement(By.linkText("Click Here")).click();
+		driver.findElement(By.linkText("Amazon Pay")).click();
 	}
 	
 	@Test
