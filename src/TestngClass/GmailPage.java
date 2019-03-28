@@ -63,7 +63,7 @@ public class GmailPage {
 	        driver.findElement(By.xpath("//*[@id=\":p5\"]")).sendKeys("Hi How are you");
 	        
 	        try {
-				Thread.sleep(4000);
+				Thread.sleep(5000);
 			} catch (InterruptedException e) {
 				
 				e.printStackTrace();
