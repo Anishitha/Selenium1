@@ -75,7 +75,7 @@ public class GmailPage {
 		
 		driver.findElement(By.xpath("//*[@id=\":nq\"]")).click();
 		try {
-			Thread.sleep(10000);
+			Thread.sleep(5000);
 		} catch (InterruptedException e) {
 			
 			e.printStackTrace();
