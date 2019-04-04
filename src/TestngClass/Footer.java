@@ -1,5 +1,7 @@
 package TestngClass;
 
+import java.util.Set;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -12,7 +14,7 @@ public class Footer {
 	
 	@BeforeTest
 	public void beforeTheTest() {
-		System.setProperty("webdriver.chrome.driver", "D:/chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "E:\\chromedriver.exe");
 		driver = new ChromeDriver();
 	}
 	
@@ -36,14 +38,27 @@ public class Footer {
 			
 			e.printStackTrace();
 		}
+		Set<String> WindowHandles = driver.getWindowHandles();
+		
+		for(String eachHandle : WindowHandles) {
+			
+			driver.switchTo().window(eachHandle);
+			
+			try {
+				Thread.sleep(6000);
+			} catch (InterruptedException e) {
+				
+				e.printStackTrace();
+			}
 					
 			driver.switchTo().window(currentWindowHandle);	
 			
-		try {
-			Thread.sleep(6000);
-		} catch (InterruptedException e) {
+			try {
+				Thread.sleep(6000);
+			} catch (InterruptedException e) {
 			
-			e.printStackTrace();
+				e.printStackTrace();
+			}
 		}
 
 	}
