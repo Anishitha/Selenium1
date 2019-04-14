@@ -36,7 +36,10 @@ public class TestngFirst {
 	
 	@Test
 	public void testcase02(){
+<<<<<<< HEAD
 		
+=======
+>>>>>>> branch 'master' of https://github.com/Anishitha/Selenium1.git
 		driver.findElement(By.linkText("Amazon Pay")).click();
 	}
 	
