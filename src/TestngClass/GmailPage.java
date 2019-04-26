@@ -35,7 +35,7 @@ public class GmailPage {
 			
 			e.printStackTrace();
 		}
-		driver.findElement(By.xpath("//*[@type=\"password\"]")).sendKeys("reddy8909");
+		driver.findElement(By.xpath("//*[@type=\"password\"]")).sendKeys("****");
 		driver.findElement(By.className("CwaK9")).click();
 		try {
 			Thread.sleep(10000);
