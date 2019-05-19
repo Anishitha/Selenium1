@@ -82,7 +82,7 @@ public class BookMovie {
 				for(int i = 0; i < seats.size() && (seats.size()-i>=3); i++) {
 					if(Integer.parseInt(seats.get(i+2).getText().trim()) == Integer.parseInt(seats.get(i).getText().trim())+2);
 					seats.get(i).click();
-				
+					break;
 				}
 		}
 		driver.findElement(By.xpath("//*[@class=\"bottom-screen\"]//a[@id=\"btmcntbook\"]")).click();	
